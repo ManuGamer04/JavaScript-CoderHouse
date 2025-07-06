@@ -3,24 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo -->
     <title>Tienda Pijamas</title>
+    <!-- Css -->
     <link rel="stylesheet" href="./css/styles.css"/>
+    <!-- Js -->
+    <script src="javaScript/main.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>NIDDO SWEETDREAMS</h1>
-        <p>¡Bienvenido a la tienda de pijamas más tierna de todas!</p>
+        <div class="header-col izquierda"></div>
+        <div class="header-col centro">
+            <h1>NIDDO SWEETDREAMS</h1>
+            <p>¡Bienvenido a la tienda de pijamas más tierna de todas!</p>
+        </div>
+        <div class="header-col derecha" id="carrito-header">
+            🛒 Carrito (<span id="cantidad-carrito">0</span>)
+            <div class="contenedor-boton-header">
+                <button id="comprar">Comprar carrito</button>
+            </div>
+            <div class="contenedor-boton-header">
+                <button id="vaciar">Vaciar carrito</button>
+            </div>
+        </div>
     </header>
+
     <main>
         <section id="productos">
         <h2 class="titulo">Nuestro catalogo de Pijamas:</h2>
         <ul id="lista-productos" class="productos-lista">
         <!-- JS inserto productos aca -->
         </ul>
-        <div class="contenedor-boton">
-            <button id="comprar">¡Quiero comprar!</button>
-        </div>
+       
         
     </section>
     </main>
@@ -28,6 +43,6 @@
 
     </footer>
     
-    <script src="javaScript/main.js" defer></script>
+    
 </body>
 </html>
